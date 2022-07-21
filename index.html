@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body onload="render()">
+
+    <div class="menu">
+
+        <div class="keep">
+            <h1>MyKeepiO</h1>
+        </div>
+        <div class="inputsearchborder">
+            <div class="searchsize">
+                <img class="searchsize3" src="img/search-2-48.png" alt="">
+            </div>
+            <input class="inputsearch" placeholder="Suchen..." type="text">
+            <div class="searchsize"><img class="searchsize2" src="img/x-mark-32.png" alt=""></div>
+        </div>
+
+    </div>
+
+    <div class="mainNotecontainer">
+        <div class="sidemenu">
+            <div class="sideNote" id="sideNote" onclick="render(); sideNote()">
+                <p class="sidepadding">Notizen</p>
+            </div>
+            <a class="sideNoteTrash" id="sideTrash" onclick="trashRender(); sideTrash()">
+                <span class="sidepadding">Trash</span>
+            </a>
+        </div>
+        <div class="twonotecontainer">
+            <div class="noteContainer">
+                <div class="noteInput">
+                    <input maxlength="0" onclick="openRealInput()" id="fakeInput" placeholder="Neue Notiz..." class="inputnote"
+                        type="text">
+
+                    <div id="realinput" class="realinput d-none">
+                        <input id="titel" placeholder="Titel..." class="realinputnote" type="text">
+                        <textarea id="note" class="realinputnote" placeholder="Notiz" name="" id="" cols="30"
+                            rows="10"></textarea>
+
+                    </div>
+                </div>
+                <div onclick="closeRealInput(); addNote()" id="realinput-bg" class="realinput-bg d-none">
+                </div>
+
+            </div>
+
+            <div class="content" id="content">
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

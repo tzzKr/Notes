@@ -1,0 +1,350 @@
+body {
+
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 15px;
+}
+
+
+.menu {
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.41);
+    display: flex;
+
+    align-items: center;
+}
+
+.inputsearch {
+
+    border: none;
+    outline: none;
+    height: 46px;
+
+    width: 500px;
+    background-color: rgb(243, 243, 243);
+
+}
+
+.inputsearchborder {
+
+    border: 1px solid lightgray;
+    border-radius: 32px;
+    height: 46px;
+    margin-left: 100px;
+    width: 600px;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.searchsize {
+    padding: 16px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.searchsize:hover {
+
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.searchsize2 {
+    height: 15px;
+
+}
+
+.searchsize3 {
+    height: 25px;
+
+}
+
+.keep {
+    margin-left: 50px;
+}
+
+.mainNotecontainer {
+    display: flex;
+}
+
+.sidemenu {
+    margin-top: 10px;
+    max-width: 350px;
+}
+
+.sideNote {
+    background: rgb(0, 162, 255);
+    height: 50px;
+    width: 300px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sideNoteTrash {
+    background: rgb(232, 212, 255);
+    height: 50px;
+    width: 250px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    transition: 0.075s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sideNoteTrash:hover {
+
+    background: rgb(132, 28, 252);
+    color: white;
+    width: 300px;
+}
+
+.sidepadding {
+    padding-left: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.sideTrash {
+
+    background: rgb(232, 212, 255);
+    height: 50px;
+    width: 250px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    transition: 0.075s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sideTrash:hover {
+
+    background: rgb(132, 28, 252);
+    color: white;
+    width: 300px;
+}
+
+.sideTrashTrash {
+
+    background: rgb(0, 162, 255);
+    height: 50px;
+    width: 300px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.noteInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+    position: relative;
+}
+
+.noteContainer {
+    height: 230px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputnote {
+    border: 1px solid lightgray;
+    outline: none;
+    height: 46px;
+    border-radius: 30px;
+    width: 450px;
+    background-color: rgb(243, 243, 243);
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 0;
+
+}
+
+.realinput {
+    z-index: 2;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    outline: none;
+    height: 150px;
+    border-radius: 25px;
+    width: 450px;
+    background-color: rgb(243, 243, 243);
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 0;
+
+}
+
+.realinputnote {
+    border: none;
+    outline: none;
+    height: 46px;
+    border-radius: 30px;
+    width: 440px;
+    background-color: rgb(243, 243, 243);
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 440px;
+    min-width: 440px;
+    max-height: 80px;
+    min-height: 60px
+}
+
+.d-none {
+
+    display: none;
+}
+
+.realinput-bg {
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.note {
+
+    border: 1px solid lightgray;
+    max-width: 300px;
+    min-width: 200px;
+    min-height: 200px;
+    max-height: 300px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.24);
+    margin: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.twonotecontainer {
+    flex: 1;
+}
+
+.deleteNote {
+    justify-content: center;
+    display: flex;
+
+}
+
+.styledelete {
+    border: 1px solid lightgray;
+    background-color: rgb(0, 162, 255);
+    border-radius: 10px;
+    width: 50px;
+    height: 20px;
+    transition: 0.075s;
+}
+
+.styledelete:hover {
+    background-color: rgb(0, 105, 167);
+
+}
+
+@media(max-width: 900px) {
+
+    .inputsearchborder {
+        display: none;
+    }
+
+    .keep {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        margin-left: 0;
+
+    }
+
+    .mainNotecontainer {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .sidemenu {
+        display: flex;
+        max-width: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 25px;
+
+    }
+
+    .sideNoteTrash {
+
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        margin-top: 10px;
+
+    }
+
+    .sideNote {
+
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        margin-top: 10px;
+
+    }
+
+    .inputnote {
+        width: 300px;
+    }
+
+    .realinput {
+
+        width: 300px;
+
+    }
+
+    .realinputnote {
+        width: 300px;
+        min-width: 200px;
+    }
+
+    .sidepadding {
+        padding-left: 0;
+        flex: 1;
+        text-align: center;
+    }
+}
